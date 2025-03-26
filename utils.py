@@ -18,10 +18,15 @@ def list_files(path: str) -> list:
     except Exception as e:
         print(f"An error occurred: {e}")
         return []
-    
+
 
 if __name__ == "__main__":
+    test = b"costam<|EOF|>"
+    print(len(test))
+    print(test[:len(test) - 7])
+    print(test[len(test) - 7:])
+    
     # Example usage
-    path = "."  # Current directory
-    files = list_files(path)
-    print("Files in directory:", files)
+    # path = "."  # Current directory
+    # files = list_files(path)
+    # print("Files in directory:", files)
